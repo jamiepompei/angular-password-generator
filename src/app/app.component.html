@@ -6,23 +6,23 @@
 </div>
 
 <div>
-  <label>User Letters</label>
-  <input type="checkbox" />
+  <label>Use Letters</label>
+  <input (change)="onChangeUseLetters()" type="checkbox" />
 </div>
 <div>
-  <label>User Numbers</label>
-  <input type="checkbox" />
+  <label>Use Numbers</label>
+  <input (change)="onChangeUseNumbers()" type="checkbox" />
 </div>
 <div>
-  <label>User Symbols</label>
-  <input type="checkbox" />
+  <label>Use Symbols</label>
+  <input (change)="onChangeUseSymbols()" type="checkbox" />
 </div>
 
 <div>
-  <button>Generate</button>
+  <button (click)="onButtonClick()">Generate</button>
 </div>
 
 <div>
   <label>Your Password</label>
-  <input />
+  <input [value]="password"/>
 </div>
